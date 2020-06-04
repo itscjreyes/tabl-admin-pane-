@@ -62,7 +62,7 @@ class Row extends Component {
 
         return(
             <tr id={id}>
-                <td>
+                <td className="row-title">
                     <TextField
                         variant="outlined"
                         name="displayName"
@@ -70,7 +70,7 @@ class Row extends Component {
                         onChange={this.handleChange}
                     />
                 </td>
-                <td>
+                <td className="row-description">
                     <TextField
                         variant="outlined"
                         name="description"
@@ -78,7 +78,7 @@ class Row extends Component {
                         onChange={this.handleChange}
                     />  
                 </td>
-                <td>
+                <td className="row-link">
                     <TextField
                         variant="outlined"
                         name="link"
@@ -86,7 +86,7 @@ class Row extends Component {
                         onChange={this.handleChange}
                     />
                 </td>
-                <td>
+                <td className="row-type">
                 <FormControl variant="outlined">
                     <Select
                         value={type}
@@ -101,9 +101,9 @@ class Row extends Component {
                     </Select>
                 </FormControl>
                 </td>
-                <td>
-                <Button variant="contained" size="large" color="default" onClick={this.onUpdate}>Update</Button>
-                <Button size="large" onClick={this.onDelete}>Delete</Button>
+                <td className="row-buttons">
+                <Button variant="contained" size="medium" color="default" onClick={this.onUpdate}>Update</Button>
+                <Button size="small" onClick={this.onDelete}>Delete</Button>
                 </td>
             </tr>
         )

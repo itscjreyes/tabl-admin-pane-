@@ -1,10 +1,6 @@
 .filters-wrapper {
-    .container {
-        padding-top: 0;
-        padding-bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
 }

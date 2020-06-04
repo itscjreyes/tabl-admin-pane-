@@ -1,5 +1,6 @@
 import React from 'react';
 import {LocationFilter} from '../Filters/filter.location.component';
+import NewRow from '../New-Row/new-row.component';
 
 const customStyles = {
     control: (provided, state) => ({
@@ -36,13 +37,14 @@ const customStyles = {
 
 const FiltersWrapper = props => (
     <div className="filters-wrapper">
-        <div className="container">
-            <LocationFilter
-                value={props.location}
-                handleChange={props.handleLocationChange}
-                styles={customStyles}
-            />
-        </div>
+        <LocationFilter
+            value={props.location}
+            handleChange={props.handleLocationChange}
+            styles={customStyles}
+        />
+        <NewRow 
+            location={props.location}
+        />
     </div>
 )
 

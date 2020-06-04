@@ -1,0 +1,33 @@
+th {
+    text-align: left;
+}
+
+td.row-title {
+    width: 20%;
+}
+
+td.row-description {
+    width: 25%;
+}
+
+td.row-link {
+    width: 20%;
+}
+
+td.row-type {
+    width: 15%;
+}
+
+td.row-buttons {
+    width: 20%;
+
+    > button {
+        margin: 0 10px;
+    }
+}
+
+td:not(.row-buttons) {
+    > div {
+        width: 100%;
+    }
+}

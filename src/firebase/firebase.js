@@ -1,7 +1,8 @@
 import firebase from 'firebase';
+import "firebase/auth";
 
-const key = process.env.FIREBASE_KEY;
-const id = process.env.FIREBASE_ID;
+const key = process.env.REACT_APP_FIREBASE_KEY;
+const id = process.env.REACT_APP_FIREBASE_ID;
 
 const config = {
     apiKey: key,

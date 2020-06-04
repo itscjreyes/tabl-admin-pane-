@@ -1,5 +1,11 @@
+@import './SCSS/normalize.scss';
+@import './SCSS/global.scss';
+
 @import './Components/Filters-Wrapper/filters-wrapper.styles.scss';
 @import './Components/Filters/filter.styles.scss';
 @import './Components/Loader/loader.styles.scss';
+@import './Components/New-Row/new-row.styles.scss';
 @import './Components/Row/row.styles.scss';
 @import './Components/Table/table.styles.scss';
+@import './Pages/login.styles.scss';
+@import './Pages/admin.styles.scss';
