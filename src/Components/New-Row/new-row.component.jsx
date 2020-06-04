@@ -108,7 +108,7 @@ class NewRow extends Component {
                                     <MenuItem value="fund">Fund</MenuItem>
                                     <MenuItem value="organization">Organization</MenuItem>
                                     <MenuItem value="petition">Petition</MenuItem>
-                                    <MenuItem value="resource">Resources</MenuItem>
+                                    <MenuItem value="resource">Resource</MenuItem>
                                 </Select>
                             </FormControl>
                             <Button variant="contained" size="large" color="primary" type="submit">Add</Button>
