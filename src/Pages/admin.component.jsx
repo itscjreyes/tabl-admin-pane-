@@ -51,11 +51,11 @@ class Admin extends Component {
 
     return (
       <div className="admin">
+          <div className="title-wrapper">
+            <h1>TABL - Admin Panel</h1>
+            <Button variant="contained" size="small" color="default" onClick={() => firebase.auth().signOut()}>Sign Out</Button>
+          </div>
           <div className="container">
-              <div className="title-wrapper">
-                <h1>TABL - Admin Panel</h1>
-                <Button variant="contained" size="small" color="default" onClick={() => firebase.auth().signOut()}>Sign Out</Button>
-              </div>
             <FiltersWrapper
             location={location}
             handleLocationChange={this.onLocationChange}

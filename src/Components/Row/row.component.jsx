@@ -97,7 +97,7 @@ class Row extends Component {
                         <MenuItem value="fund">Fund</MenuItem>
                         <MenuItem value="organization">Organization</MenuItem>
                         <MenuItem value="petition">Petition</MenuItem>
-                        <MenuItem value="other">Other</MenuItem>
+                        <MenuItem value="resources">Resources</MenuItem>
                     </Select>
                 </FormControl>
                 </td>
