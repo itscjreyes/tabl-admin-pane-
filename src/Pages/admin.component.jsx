@@ -49,6 +49,10 @@ class Admin extends Component {
   render(){
     const {data, location, isLoading} = this.state;
 
+    const sortedData = data.sort((a, b) => (a.displayName > b.displayName) ? 1 : -1);
+    console.log(data)
+    console.log(sortedData)
+
     return (
       <div className="admin">
           <div className="title-wrapper">
@@ -66,7 +70,7 @@ class Admin extends Component {
             :
             <Table 
                 location={location}
-                data={data}
+                data={sortedData}
             />
             }
           </div>
