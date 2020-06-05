@@ -50,8 +50,6 @@ class Admin extends Component {
     const {data, location, isLoading} = this.state;
 
     const sortedData = data.sort((a, b) => (a.displayName > b.displayName) ? 1 : -1);
-    console.log(data)
-    console.log(sortedData)
 
     return (
       <div className="admin">
