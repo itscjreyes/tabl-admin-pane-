@@ -64,13 +64,13 @@ class NewRow extends Component {
 
         return(
             <div className="form-section">
-                <Button variant="contained" size="large" color="primary" onClick={this.openModal}>Add New Item</Button>
+                <Button variant="contained" size="large" color="primary" onClick={this.openModal}>Add Item to This Location</Button>
                 <div className={`form-modal ${modalState}`}>
                     <div className="form-wrapper">
                         <button className="close" onClick={this.closeModal}>
                             <span></span><span></span>
                         </button>
-                        <h3>Add a New Item</h3>
+                        <h3>Add New Item</h3>
                         <form onSubmit={this.onCreate}>
                             <TextField
                                 variant="outlined"

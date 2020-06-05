@@ -59,6 +59,7 @@ class Row extends Component {
 
     render(){
         const {displayName, description, link, type, id} = this.state.inputs;
+        console.log(this.state)
 
         return(
             <tr id={id}>

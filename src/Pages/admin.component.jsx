@@ -12,7 +12,7 @@ class Admin extends Component {
     this.state = {
       isLoading: true,
       data: [],
-      location: 'toronto'
+      location: 'toronto',
     }
 
     this.onLocationChange = this.onLocationChange.bind(this);
@@ -38,7 +38,7 @@ class Admin extends Component {
     const data = dataRaw.docs.map(doc => ({...doc.data(), id: doc.id}));
     this.setState({
       data: data,
-      isLoading: false
+      isLoading: false,
     })
   }
 
@@ -50,6 +50,7 @@ class Admin extends Component {
     const {data, location, isLoading} = this.state;
 
     const sortedData = data.sort((a, b) => (a.displayName > b.displayName) ? 1 : -1);
+    
 
     return (
       <div className="admin">
