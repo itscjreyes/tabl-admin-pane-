@@ -1,19 +1,15 @@
 import React from 'react';
 import Select from 'react-select';
-
-const options = [
-    { value: 'toronto', label: 'Toronto' },
-    { value: 'nyc', label: 'NYC' }
-]
+import { groupedOptions } from './locations';
 
 export const LocationFilter = props => (
     <div className="filter">
-        <h3>Select Location</h3>
+        <h3>Select/Search Location</h3>
         <Select
             value={props.location}
-            options={options}
+            options={groupedOptions}
             onChange={props.handleChange}
-            isSearchable={false}
+            isSearchable={true}
             defaultValue={{ value: 'toronto', label: 'Toronto' }}
             styles={props.styles}
         />
