@@ -18,7 +18,8 @@ class NewRow extends Component {
                 link: '',
                 type: ''
             },
-            modalOpen: false
+            modalOpen: false,
+            btnDisabled: false
         }
     }
 
@@ -42,6 +43,10 @@ class NewRow extends Component {
 
     onCreate = (e) => {
         e.preventDefault();
+
+        this.setState({
+            btnDisabled: true
+        })
 
         const {displayName, description, link, type} = this.state.inputs;
         
@@ -111,7 +116,12 @@ class NewRow extends Component {
                                     <MenuItem value="resource">Resource</MenuItem>
                                 </Select>
                             </FormControl>
-                            <Button variant="contained" size="large" color="primary" type="submit">Add</Button>
+                            {
+                                this.state.btnDisabled ?
+                                <Button variant="contained" size="large" color="primary" type="submit" disabled>Adding...</Button>
+                                :
+                                <Button variant="contained" size="large" color="primary" type="submit">Add</Button>
+                            }
                         </form>
                     </div>
                 </div>
