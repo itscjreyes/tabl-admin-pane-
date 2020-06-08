@@ -1,15 +1,16 @@
 export const cityOptions = [
     { value: 'toronto', label: 'Toronto' },
-    { value: 'nyc', label: 'NYC' }
+    { value: 'minneapolis', label: 'Minneapolis'},
+    { value: 'nyc', label: 'NYC' },
 ]
 
 export const stateOptions = [
-    { value: 'ontario', label: 'Ontario' }
+    { value: 'ontario', label: 'Ontario' },
 ]
 
 export const countryOptions = [
     { value: 'canada', label: 'Canada' },
-    { value: 'usa', label: 'USA' }
+    { value: 'usa', label: 'USA' },
 ]
 
 export const groupedOptions = [
