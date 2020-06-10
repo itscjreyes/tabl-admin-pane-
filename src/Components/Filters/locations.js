@@ -6,6 +6,7 @@ export const cityOptions = [
   { value: 'philadelphia', label: 'Philadelphia' },
   { value: 'portland', label: 'Portland' },
   { value: 'toronto', label: 'Toronto' },
+  { value: 'vancouver', label: 'Vancouver' },
 ]
 
 export const stateOptions = [
